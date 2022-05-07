@@ -8,7 +8,7 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-	overrides: ["Camera2", "GCamGOPrebuilt-V2", "Snap"],
+	overrides: ["Camera2", "Snap", "GCamGOPrebuilt-V2", "GCamGOPrebuilt-SHAMIM_V5"],
 }
 
 android_app_import {
@@ -21,5 +21,18 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-	overrides: ["Camera2", "GCamGOPrebuilt", "Snap"],
+	overrides: ["Camera2", "Snap", "GCamGOPrebuilt", "GCamGOPrebuilt-SHAMIM_V5"],
+}
+
+android_app_import {
+	name: "GCamGOPrebuilt-SHAMIM_V5",
+	owner: "google",
+	apk: "GCamGOPrebuilt-SHAMIM_V5.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+	overrides: ["Camera2", "Snap", "GCamGOPrebuilt", "GCamGOPrebuilt-V2"],
 }
